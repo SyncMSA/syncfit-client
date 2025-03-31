@@ -19,7 +19,7 @@ const SocialLogin = () => {
   const nav = useNavigate();
 
   const handleKakaoLogin = () => {
-    consol.log(BASE_URL);
+    console.log(BASE_URL);
     //window.location.href = kakaoURL;
   };
 
