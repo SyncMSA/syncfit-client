@@ -1,6 +1,8 @@
 import axios from 'axios';
 
-const BASE_URL = 'http://35.163.219.80:8000';
+const REST_API_KEY = import.meta.env.VITE_SERVER_IP;
+const REST_API_PORT = import.meta.env.VITE_SERVER_PORT
+const BASE_URL = `http://${REST_API_KEY}:${REST_API_PORT}`;
 
 export const socialLogin = (code) => {
   return axios.post(

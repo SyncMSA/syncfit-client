@@ -6,6 +6,10 @@ import { useNavigate } from 'react-router-dom';
 import KakaoButton from './KakaoButton';
 import { AuthContext } from '../contexts/AuthContext';
 
+const REST_API_KEY = import.meta.env.VITE_SERVER_IP;
+const REST_API_PORT = import.meta.env.VITE_SERVER_PORT
+const BASE_URL = `http://${REST_API_KEY}:${REST_API_PORT}`;
+
 const SocialLogin = () => {
   const REST_API_KEY = import.meta.env.VITE_KAKAO_REST_API;
   const REDIRECT_URI = import.meta.env.VITE_KAKAO_OAUTH_REDIRECT_URI;
@@ -15,7 +19,8 @@ const SocialLogin = () => {
   const nav = useNavigate();
 
   const handleKakaoLogin = () => {
-    window.location.href = kakaoURL;
+    consol.log(BASE_URL);
+    //window.location.href = kakaoURL;
   };
 
   const handleLogout = () => {
