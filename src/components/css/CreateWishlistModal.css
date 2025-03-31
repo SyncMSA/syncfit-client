@@ -1,0 +1,99 @@
+.wishlist-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+
+  padding: 0px 20px;
+}
+
+.wishlist-modal-container {
+  background-color: var(--sliver);
+  padding: 20px;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 400px;
+}
+
+.wishlist-modal-content {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+}
+
+.wishlist-modal-img {
+  width: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.wishlist-modal-img label {
+  font-size: 12px;
+  text-align: center;
+}
+
+.wishlist-modal-img-input {
+  width: 50px;
+  height: 50px;
+  padding: 5px;
+  border: 2px dashed var(--l-grey);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.wishlist-modal-img-input img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* 제목 입력 영역: 남은 공간 모두 사용 */
+.wishlist-modal-title {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.wishlist-modal-title input[type="text"] {
+  width: 100%;
+  padding: 15px;
+  box-sizing: border-box;
+  border: 2px solid var(--l-grey);
+  border-radius: 8px;
+}
+
+/* 버튼 영역 */
+.wishlist-modal-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.wishlist-modal-button-create {
+  width: 100%;
+  background-color: var(--secondary);
+  padding: 10px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.wishlist-modal-button-cancel {
+  padding: 10px;
+  color: white;
+  width: 100%;
+  background-color: var(--error);
+  border: none;
+  border-radius: 5px;
+}

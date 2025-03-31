@@ -1,0 +1,69 @@
+.about-us {
+  width: 100vw;
+  height: 100vh;
+<<<<<<< Updated upstream
+
+  box-sizing: border-box;
+
+=======
+
+  box-sizing: border-box;
+  padding: 20px;
+
+  display: flex;
+  flex-direction: column;
+  background-color: var(--r-black);
+  font-family: 'Moneygraphy';
+}
+
+.about-us h1 {
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 30px;
+}
+
+.about-us h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--shade-1);
+  margin-bottom: 15px;
+}
+
+.about-us p {
+  font-size: 1.3rem;
+  color: var(--white);
+  line-height: 1.6;
+  margin-bottom: 20px;
+
+  max-width: 1000px;
+  word-wrap: break-word;
+  padding: 20px;
+}
+
+.about-us p br {
+  margin-bottom: 10px;
+}
+
+.about-us a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .about-us {
+    padding: 15px;
+  }
+
+  .about-us h1 {
+    font-size: 2rem;
+  }
+
+  .about-us h2 {
+    font-size: 1.5rem;
+  }
+
+  .about-us p {
+    font-size: 0.9rem;
+  }
+>>>>>>> Stashed changes
+}

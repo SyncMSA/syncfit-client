@@ -1,0 +1,74 @@
+.hero {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero .type-animation {
+  color: white;
+  font-size: 25px;
+  white-space: pre-line;
+  text-align: center;
+
+  display: block;
+  min-height: 100px;
+}
+
+video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.hero h1 {
+  margin: 0;
+  color: var(--primary);
+  font-size: 100px;
+
+  opacity: 0;
+  animation: fadeIn 2s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.hero .hero-link {
+  color: white;
+  font-size: 25px;
+  text-decoration: none;
+  padding-bottom: 5px;
+}
+
+.hero .hero-link:hover {
+  color: var(--l-grey)
+}
+
+/* 반응형 */
+
+@media (min-width: 1024px) {
+  .hero h1 {
+    font-size: 200px;
+  }
+
+  .hero .hero-link {
+    font-size: 40px;
+  }
+}

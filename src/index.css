@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Limelight&display=swap');
+
+@font-face {
+    font-family: 'Moneygraphy-Rounded';
+    src: url('./assets/fonts/Moneygraphy-Rounded.otf');
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Moneygraphy-Rounded' sans-serif;
+}
+
+/* 영어만 따로 Limelight 적용 */
+:lang(en) {
+    font-family: 'Limelight', sans-serif;
+}
+
+:root {
+    --primary: #FFD100;
+    --secondary: #E86912;
+    --info: #3288FF;
+    --white: #FFFFFF;
+    --r-black: #0d0d0dec;
+    --black: #263238;
+    --d-grey: #4D4D4D;
+    --grey: #717171;
+    --l-grey: #89939E;
+    --grey-blue: #ABBED1;
+    --sliver: #F5F7FA;
+
+    --shade-1: #FFD100;
+    --shade-2: #E7BE00; 
+    --shade-3: #C9A400;
+    --shade-4: #A38600;
+
+    --tint-1: #FFD100;
+    --tint-2: #FFD61C;
+    --tint-3: #FFE051;
+    --tint-4: #FFEA8D;
+    --tint-5: #FFF1B2;
+
+    --error: #EE4452;
+    --success: #3288FF;
+
+    --kakao: #FFEB00;
+}

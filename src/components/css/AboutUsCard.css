@@ -1,0 +1,51 @@
+.about-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: var(--sliver);
+}
+
+.about-card-content {
+  font-family: 'Moneygraphy-Rounded';
+}
+
+.about-card-motion {
+  background: var(--primary);
+  padding: 40px;
+  border-radius: 20px;
+  cursor: grab;
+  text-align: center;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.15);
+  white-space: pre-line;
+}
+
+.about-card-motion:active {
+  cursor: grabbing;
+}
+
+.about-card-title {
+  font-size: 2.5rem;
+  margin: 0;
+  color: var(--black);
+}
+
+.about-card-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin: 20px 0px;
+}
+
+.about-card-icons a {
+  color: inherit;
+}
+
+
+@media (min-width: 1024px) {
+  .about-card-motion {
+    min-height: 300px;
+    max-width: 500px;
+  }
+}
