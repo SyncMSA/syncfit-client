@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const BASE_URL = 'http://spring-server:8080';
+const BASE_URL = 'http://35.163.219.80:8000';
 
 export const createWishlist = async (title, imageFile, accessToken) => {
   const formData = new FormData();
