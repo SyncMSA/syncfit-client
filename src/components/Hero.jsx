@@ -9,7 +9,7 @@ const Hero = () => {
         <source src={hero} type="video/mp4" />
       </video>
       <div className='hero'>
-        <h1>SyncFit MSA2</h1>
+        <h1>SyncFit MSA</h1>
         <CustomLink to={"/emotion"} className={"hero-link"} text={"Try now"}/>
       </div>
     </>
