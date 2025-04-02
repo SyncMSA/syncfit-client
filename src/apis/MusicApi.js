@@ -8,7 +8,7 @@ export const musicRecommendation = (JSONData, accessToken) => {
   console.log(JSONData, accessToken)
   return axios
     .post(
-      `${BASE_URL}/outer-service/recommendation`,
+      `${BASE_URL}/externalApi-service/recommendation`,
       JSONData,
       {  
         headers: {
@@ -21,7 +21,7 @@ export const musicRecommendation = (JSONData, accessToken) => {
       const genre = res.data.data.genre;
       console.log('추천 장르:', genre);
 
-      return axios.get(`${BASE_URL}/outer-service/search`, {
+      return axios.get(`${BASE_URL}/externalApi-service/search`, {
         params: { genres: genre },
         headers: {
           'Authorization': `Bearer ${accessToken}`,
