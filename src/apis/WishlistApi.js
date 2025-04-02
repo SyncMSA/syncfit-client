@@ -10,7 +10,7 @@ export const createWishlist = async (title, imageFile, accessToken) => {
   formData.append("file", imageFile);
 
   const response = await axios.post(
-    `${BASE_URL}/wishlist-service`,
+    `${BASE_URL}/wishlist-service/`,
     formData,
     {
       headers: {
@@ -23,7 +23,7 @@ export const createWishlist = async (title, imageFile, accessToken) => {
 };
 
 export const getWishlists = async (accessToken) => {
-  const response = await axios.get(`${BASE_URL}/wishlist-service`, {
+  const response = await axios.get(`${BASE_URL}/wishlist-service/`, {
     headers: {
       'Content-Type': 'application/json',
       Authorization: `Bearer ${accessToken}`,
@@ -66,7 +66,7 @@ export const updateWishlist = async (wishlistId, title, imageFile, accessToken) 
       postFormData.append("files", imageFile);
     }
     return axios.post(
-      `${BASE_URL}/image-service`,
+      `${BASE_URL}/image-service/`,
       postFormData,
       {
         headers: {
@@ -83,7 +83,7 @@ export const updateWishlist = async (wishlistId, title, imageFile, accessToken) 
 };
 
 export const downloadImage = async (wishlistId, accessToken) => {
-  const response = await axios.get(`${BASE_URL}/image-service`, {
+  const response = await axios.get(`${BASE_URL}/image-service/`, {
     headers: {
       'Content-Type': 'application/json',
       Authorization: `Bearer ${accessToken}`,

@@ -6,7 +6,7 @@ const BASE_URL = `https://${REST_API_KEY}`;  //:${REST_API_PORT}`;
 
 export const addTrack = async (trackData, accessToken) => {
   const response = await axios.post(
-    `${BASE_URL}/track-service`,
+    `${BASE_URL}/track-service/`,
     trackData,
     {
       headers: {
