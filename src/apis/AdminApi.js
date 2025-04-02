@@ -2,7 +2,7 @@ import axios from 'axios';
 
 const REST_API_KEY = import.meta.env.VITE_SERVER_IP;
 const REST_API_PORT = import.meta.env.VITE_SERVER_PORT
-const BASE_URL = `https://${REST_API_KEY}:${REST_API_PORT}`;
+const BASE_URL = `https://${REST_API_KEY}`;  //:${REST_API_PORT}`;
 
 export const getUsers = async (accessToken) => {
   const response = await axios.get(`${BASE_URL}/admin-service/members`, {
