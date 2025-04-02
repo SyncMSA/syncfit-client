@@ -7,7 +7,7 @@ const BASE_URL = `https://${REST_API_KEY}`;  //:${REST_API_PORT}`;
 export const createWishlist = async (title, imageFile, accessToken) => {
   const formData = new FormData();
   formData.append("title", title);
-  formData.append("image", imageFile);
+  formData.append("file", imageFile);
 
   const response = await axios.post(
     `${BASE_URL}/wishlist-service`,
